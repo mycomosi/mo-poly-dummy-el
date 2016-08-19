@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`mo-poly-dummy-el`
+dummy element for integration tests
+
+@demo demo/index.html 
+-->
+
+<dom-module id="mo-poly-dummy-el">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'mo-poly-dummy-el',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'mo-poly-dummy-el',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
