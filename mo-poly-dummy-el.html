@@ -13,8 +13,36 @@ dummy element for integration tests
       :host {
         display: block;
       }
+
+      .node
+      {
+            width:100px;
+            height:100px;
+            border-radius:50px;
+            font-size:10px;
+            color:#fff;
+            line-height:100px;
+            text-align:center;
+            background:black;
+            margin: 10px;
+      }
+
+      .node:hover{
+       background-color: gray; 
+      }
     </style>
     <h2>Hello [[prop1]]</h2>
+    <header>
+      <nav>
+        <a>Action 1</a> | 
+        <a>Action 2</a> 
+      </nav>
+    </header>
+    <div>
+      <div class="node" id="#node1">node1</div>
+      <div class="node" id="#node2">node2</div>
+    </div>
+
   </template>
 
   <script>
